@@ -22,9 +22,9 @@ class Triangle
       #     puts error.message
       # end
       
-    elsif (@one + @two <= @three || @two + @three <= @one <=0 || @one + @three <= @two <=0)
+    elsif (@one + @two <= @three) || (@two + @three <= @one <=0) || (@one + @three <= @two <=0)
     
-    #   raise TriangleError
+      raise TriangleError
     
     else
       
